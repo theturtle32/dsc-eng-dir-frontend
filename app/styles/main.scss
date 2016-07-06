@@ -1,0 +1,74 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+}
+
+.engineer-list, form.new-engineer {
+  background-color: #F8F8F8;
+  margin: 1em 0;
+  padding: 0.5em 2em;
+}
+
+form.new-engineer {
+  .validation-error {
+    background-color: #FAA;
+    border: 1px #A00 dashed;
+    padding: 1em;
+    margin: 1em 0;
+    display: none;
+  }
+  
+  table.squad-memberships {
+    th:not(:first-child),td:not(:first-child) {
+      width: 5em;
+      text-align: center;
+    }
+    th {
+      vertical-align: bottom;
+      padding-bottom: 1em;
+    }
+    td {
+      padding: 0.25em;
+    }
+    th:first-child,td:first-child {
+      width: 12em;
+      text-align: left;
+    }
+  }
+  input[type=submit] {
+    margin-top: 1em;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
